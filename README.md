@@ -1,6 +1,6 @@
-# React Project CLI
+# React Projects CLI
 
-Bored of setting up my frontend projects, so I've decided to create this CLI to do it faster. This contains all the libraries, the folder structure and approaches I like to use when working on my personal frontend projects.
+Bored of setting up my frontend projects, so I've decided to create this CLI to do it faster. This contains all the libraries, the folder structure, and approaches I like to use when working on my personal frontend projects.
 
 - [Introduction](#introduction)
 - [Features](#features)

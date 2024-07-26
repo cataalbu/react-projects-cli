@@ -11,6 +11,11 @@ import {
   installDependencies,
   transformToScss,
 } from './init.js';
+import {
+  addRouterWithOutlet,
+  addRouterWithRequireAuth,
+  addSimpleRouter,
+} from './react-router-init.js';
 
 program
   .version('1.0.0')
@@ -52,6 +57,14 @@ program
         },
       ]);
       if (!confirm) return;
+
+      if (options.outlet) {
+        addRouterWithOutlet();
+      } else if (options.requireAuth) {
+        addRouterWithRequireAuth();
+      } else {
+        addSimpleRouter();
+      }
     }
   });
 

@@ -1,6 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import { AppLayout } from '../components';
-import ArtistListPage from '../pages/artists/ArtistsListPage';
 
 export function AppRouter() {
   return (

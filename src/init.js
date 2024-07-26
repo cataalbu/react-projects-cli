@@ -6,7 +6,6 @@ import {
   mkdirSync,
   readFileSync,
   renameSync,
-  writeFile,
   writeFileSync,
 } from 'fs';
 import { parse, stringify } from 'comment-json';
@@ -122,6 +121,9 @@ export function createFolderStructure(projectName) {
   mkdirSync(path.join(projectName, 'src', 'components', 'common'), {
     recursive: true,
   });
+  mkdirSync(path.join(projectName, 'src', 'components', 'layout'), {
+    recursive: true,
+  });
   mkdirSync(path.join(projectName, 'src', 'types'), {
     recursive: true,
   });
@@ -145,6 +147,10 @@ export function createFolderStructure(projectName) {
   });
   mkdirSync(path.join(projectName, 'src', 'scsss', 'abstracts'), {
     recursive: true,
+  });
+
+  writeFileSync(path.join(projectName, 'src', 'components', 'index.ts'), '', {
+    flag: 'w+',
   });
 }
 
